@@ -2,7 +2,6 @@
 
 import pandas as pd
 
-
 def load_reviews(file_path):
     reviews = pd.read_csv(file_path)
 

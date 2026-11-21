@@ -23,7 +23,7 @@ The dataset is located at `data/womens_clothing_e-commerce_reviews.csv` and must
 
 ## Run
 
-Once the missing functions below are implemented, run from the project root:
+Run from the project root:
 
 ```bash
 PYTHONPATH=src .venv/bin/python main.py
@@ -33,4 +33,6 @@ The script prints sample categories and similar reviews, then opens a plot. Embe
 
 ## Current status
 
-Work in progress: `create_embeddings` in `embeddings.py` and `categorize_reviews` in `analysis.py` still need implementation. The package configuration also references the old module name; setup above installs dependencies without building the package.
+Embedding generation and cosine-similarity categorization are implemented, alongside review loading, local ChromaDB storage, similarity search, and t-SNE visualization. The full workflow requires the local dataset and an OpenAI API key.
+
+The package configuration still references the old module name, so use the setup and run commands above. Settings in `config.py` are defined but are not yet used by the demo in `main.py`.
