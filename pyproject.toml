@@ -1,0 +1,32 @@
+[project]
+name = "clothing-review-analysis-with-embeddings"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Topgyal Gurung", email = "topgyaltsering3@gmail.com" }
+]
+requires-python = ">=3.14"
+dependencies = [
+    "chromadb>=1.5.9",
+    "matplotlib>=3.11.2",
+    "numpy>=2.5.5",
+    "openai>=3.57.0",
+    "pandas>=3.1.1",
+    "scikit-learn>=1.9.1",
+    "scipy>=1.18.1",
+    "tiktoken>=0.14.0",
+]
+
+[project.scripts]
+clothing-review-analysis-with-embeddings = "clothing_review_analysis_with_embeddings:main"
+
+[build-system]
+requires = ["uv_build>=0.12.19,<0.13.0"]
+build-backend = "uv_build"
+
+[dependency-groups]
+dev = [
+    "pytest>=9.2.0",
+    "ruff>=0.17.6",
+]
